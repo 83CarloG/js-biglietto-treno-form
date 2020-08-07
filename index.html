@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>js-biglietto-treno-form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <!-- Title -->
+        <h1>Calcola il prezzo del biglietto</h1>
+        <!-- /Title -->
+        <div class="row row--col">
+          <!-- Form Box -->
+          <div class="box">
+            <div class="form">
+              <div class="form__item">
+                <label for="form__input--name">Nome Cognome</label>
+                <input id="form__input--name" type="text" placeholder="Inserisci il tuo nome">
+              </div>
+              <div class="form__item">
+                <label for="form__input--km">Km da percorrere</label>
+                <input id="form__input--km" type="number" placeholder="Km da percorrere" min="1">
+              </div>
+              <div class="form__item">
+                <label for="form__input--age">Fascia d'et&agrave;</label>
+                <select id="form__input--age"  name="form__input--age">
+                  <option value="minorenne">Minorenne</option>
+                  <option value="minorenne">Minorenne</option>
+                  <option value="over65">Over-65</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <button id="ticket" class="btn" type="button" name="ticket">Genera</button>
+            <button id="reset" class="btn" type="button" name="reset">Annulla</button>
+          </div>
+          <!-- /Form Box -->
+          <!-- Buttons -->
+          <!-- Buttons -->
+
+          <!-- Ticket box Title -->
+          <!-- /Ticket box Title -->
+
+          <!-- Ticket Box -->
+          <div class="box">
+
+          </div>
+          <!-- /Ticket Box -->
+        </div>
+      </div>
+    </main>
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
