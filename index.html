@@ -13,45 +13,72 @@
         <!-- Title -->
         <h1>Calcola il prezzo del biglietto</h1>
         <!-- /Title -->
-        <div class="row row--col">
-          <!-- Form Box -->
-          <div class="box">
-            <div class="form">
-              <div class="form__item">
-                <label for="form__input--name">Nome Cognome</label>
-                <input id="form__input--name" type="text" placeholder="Inserisci il tuo nome">
-              </div>
-              <div class="form__item">
-                <label for="form__input--km">Km da percorrere</label>
-                <input id="form__input--km" type="number" placeholder="Km da percorrere" min="1">
-              </div>
-              <div class="form__item">
-                <label for="form__input--age">Fascia d'et&agrave;</label>
-                <select id="form__input--age"  name="form__input--age">
-                  <option value="minorenne">Minorenne</option>
-                  <option value="minorenne">Minorenne</option>
-                  <option value="over65">Over-65</option>
-                </select>
-              </div>
+        <!-- Form Box -->
+        <div class="box">
+          <div class="form">
+            <div class="form__item">
+              <label for="form__input--name">Nome Cognome</label>
+              <input id="form__input--name" type="text" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="form__item">
+              <label for="form__input--km">Km da percorrere</label>
+              <input id="form__input--km" type="number" placeholder="Km da percorrere" min="1">
+            </div>
+            <div class="form__item">
+              <label for="form__input--age">Fascia d'et&agrave;</label>
+              <select id="form__input--age"  name="form__input--age">
+                <option value="minorenne">Minorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over-65</option>
+              </select>
             </div>
           </div>
-          <div class="box">
+          <!-- Buttons -->
+          <div class="form__button">
             <button id="ticket" class="btn" type="button" name="ticket">Genera</button>
             <button id="reset" class="btn" type="button" name="reset">Annulla</button>
           </div>
-          <!-- /Form Box -->
-          <!-- Buttons -->
-          <!-- Buttons -->
-
-          <!-- Ticket box Title -->
-          <!-- /Ticket box Title -->
-
-          <!-- Ticket Box -->
-          <div class="box">
-
-          </div>
-          <!-- /Ticket Box -->
         </div>
+        <!-- /Buttons -->
+        <!-- /Form Box -->
+
+
+        <!-- Ticket box Title -->
+        <h2>Il tuo biglietto</h2>
+        <!-- /Ticket box Title -->
+
+        <!-- Ticket Box -->
+        <div class="box">
+          <h3>Dettaglio passeggeri</h3>
+          <div class="dati-biglietto">
+            <div class="nome-biglietto">
+              <h3>Nome Passeggero</h3>
+              <h4 id="nome-passeggero"></h4>
+            </div>
+            <div class="offerta-biglietto">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codice-cp"></td>
+                    <td id="costo"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- /Ticket Box -->
+
       </div>
     </main>
   <script src="js/script.js" charset="utf-8"></script>

@@ -14,14 +14,7 @@
   flex-direction: column;
   width: 1200px;
   margin: auto;
-  color: #fff;
-}
 
-.row {
-  display: flex;
-}
-.row--col {
-  flex-direction: column;
 }
 .box {
   width: 100%;
@@ -29,6 +22,7 @@
   background-color: #fff;
   margin: 20px 0;
 }
+/* Form box */
 .form {
   display: flex;
   justify-content: space-around;
@@ -37,6 +31,44 @@
 .form__item {
   display: flex;
   flex-direction: column;
-  height: 150px;
+
   color: #000;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button */
+.btn {
+  color: #b91450;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+/* /Button */
+/* /Form box */
+
+/* Ticket-box */
+.biglietto-container {
+  background-color: #fff;
+  padding: 20px;
+}
+.dati-biglietto {
+  display: flex;
+}
+.nome-biglietto {
+  padding: 10px 0;
+  background-color: grey;
+}
+.offerta-biglietto {
+  width: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
