@@ -28,5 +28,23 @@ printTicket.addEventListener("click",
     document.getElementById('nome-passeggero').innerHTML = name;
     document.getElementById('offerta').innerHTML = age;
     document.getElementById('costo').innerHTML = ticket
+// Faccio apparire il box del biglietto
+    var boxNo = document.getElementById("ticket-box");
+    boxNo.classList.remove("box-no");
+  }
+);
+
+// Annulla
+
+var annulla = document.getElementById("reset");
+annulla.addEventListener("click",
+  function() {
+    document.getElementById("ticket-box").classList.add("box-no");
+
+    // reset campi
+    document.getElementById("form__input--name").value = "";
+    document.getElementById("form__input--km").value = "";
+    document.getElementById("form__input--age").value = "";
+
   }
 );
