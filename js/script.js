@@ -30,7 +30,7 @@ printTicket.addEventListener("click",
     document.getElementById('costo').innerHTML = ticket
 // Faccio apparire il box del biglietto
     var boxNo = document.getElementById("ticket-box");
-    boxNo.classList.remove("box-no");
+    boxNo.classList.remove("box--no");
   }
 );
 
