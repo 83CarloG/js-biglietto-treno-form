@@ -72,7 +72,7 @@
   background-color: #b91450;
   color: #fff;
   outline: none;
-  
+
 }
 input:focus::placeholder {
   color: #fff;
@@ -92,25 +92,39 @@ input:focus::placeholder {
   cursor: pointer;
   margin: 20px 10px;
 }
+.btn:active, .btn:focus {
+  outline: none;
+}
 /* /Button */
 /* /Form box */
 
 /* Ticket-box */
-
 .biglietto-container {
   background-color: #fff;
   padding: 20px;
 }
 .dati-biglietto {
   display: flex;
-  padding: 20px
+  padding: 20px;
+  text-align: left;
 }
 .nome-biglietto {
-  padding: 10px 0;
+  padding: 10px;
   background-color: grey;
+}
+.nome-passeggero {
+  margin-top: 15px;
 }
 .offerta-biglietto {
   width: 100%;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+}
+.table {
+  width: 100%;
+}
+th, td {
+  max-height: 100%;
+  padding: 15px;
+  text-align: left;
 }

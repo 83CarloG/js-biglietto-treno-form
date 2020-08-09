@@ -1,12 +1,14 @@
 // Variabili
 const priceKm = 0.21;
-var printTicket = document.getElementById("ticket");
 
-  function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+var printTicket = document.getElementById("ticket");
+// Function MIX
+function getRandomInt(min, max) {
+min = Math.ceil(min);
+max = Math.floor(max);
+return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
+
 // Evento al click genera
 printTicket.addEventListener("click",
 // funzione
@@ -37,7 +39,7 @@ printTicket.addEventListener("click",
     ticket = (Math.round(ticket * 100) / 100);
 // Compilo la tabella con gli input
     document.getElementById('nome-passeggero').innerHTML = name;
-    document.getElementById('offerta').innerHTML = age;
+    document.getElementById('offerta').innerHTML = "Sconto " + age;
     document.getElementById('costo').innerHTML = ticket
 // Faccio apparire il box del biglietto
     var boxNo = document.getElementById("ticket-box");
@@ -51,7 +53,6 @@ var annulla = document.getElementById("reset");
 annulla.addEventListener("click",
   function() {
     document.getElementById("ticket-box").classList.add("box--no");
-
     // reset campi
     document.getElementById("form__input--name").value = "";
     document.getElementById("form__input--km").value = "";
